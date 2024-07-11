@@ -1,0 +1,150 @@
+*{
+box-sizing: border-box;
+
+  font-family: "Fira Sans", sans-serif;
+  
+} ;
+
+
+
+body{
+    margin:0;  
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align:center;
+}
+ 
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/*for mobile*/
+[class*="col-"]{
+
+width: 100%;
+
+}
+
+.navbar{
+    background-color: rgb(14, 54, 87);
+    
+    padding: 1% 7%;
+    text-align: center;
+
+}
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+
+
+}
+
+.nav-logo img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid black;
+    padding: 2px;
+}
+
+
+
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a{
+background-color: rgb(16, 6, 59);
+border-radius: 10px;
+padding:10px;
+margin: 7px 0px;
+
+
+}
+.nav-menu a:hover{
+   background-color: rgb(74, 92, 74);
+}
+
+.navbar::after{
+    content:'' ;
+
+    display: table;
+    clear: both;
+}
+
+/* profile design starts here */
+
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+
+}
+.profile .top-image{
+    position: absolute;
+    right: 35px;
+    top:35px;
+    transition: transform 2s;
+    height: 100px;
+    width: 100px;
+
+}
+.profile .top-image:hover{
+transform: rotate(360deg);
+}
+
+.profile-desc h1{
+
+        font-family: "Satisfy", cursive;
+        
+       
+      font-size: 3rem;
+      
+
+}
+
+
+.profile-desc p{
+
+    color: rgb(92, 100, 100);
+    text-align: center;
+    margin:0 auto 20px auto;
+    width: 90%;
+}
+
+
+.profile-desc p:hover{
+    color: rgb(64, 117, 99);
+    
+}
+
+ .bottom-image{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+   top:1000px;
+   left: 35px;
+   transition: transform 2s;
+   
+
+}
+.bottom-image:hover{
+transform: rotate(360deg);
+}
+
+/* profile design starts here */
